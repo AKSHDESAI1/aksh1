@@ -23,6 +23,34 @@
     <h1 id="a1" style="display: flex; justify-content: center;"><i>AKSH DESAI</i></h1>
     <h1 id="a2" style="display: flex; justify-content: center;"><i>AKSH DESAI</i></h1>
 
+	<!-- <input type="button" value="Check date" "modal-dialog modal-fullscreen-sm-down"> -->
+	<!-- Button trigger modal -->
+	<div style="display: flex; justify-content: center;">
+
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			Check Today Date
+		  </button>
+	</div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Aksh Desai</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" id="a10">
+		  ...
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+	<!-- Full screen modal -->
+	
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -39,10 +67,13 @@
 <script>
     let a1 = document.getElementById('a1');
     let a2 = document.getElementById('a2');
+	let a10 = document.getElementById('a10');
     function aksh() {
 
         // location.reload()
         let a = Math.random() * 1000;
+		let rudr = new Date();
+		a10.innerText = rudr;
         a = parseInt(a);
         console.log(a);
         if (a < 100) {
@@ -116,9 +147,13 @@
             a2.style.backgroundColor = 'light green';
         }
     }
-    aksh()
+    // aksh()
     setInterval(aksh, 500);
-
+	
+	
+	function rudra(){
+		let sf = new Date();
+	}
     // if (a>100)
 </script>
 
